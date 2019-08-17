@@ -1,5 +1,5 @@
 const fetch = require('node-fetch')
-const API_KEY = process.env.YOUTUBE_API_KEY; // || 'AIzaSyBv9id2xTYY9txDoGcDrgBGbbgDfv0PkaQ';
+const API_KEY = process.env.YOUTUBE_API_KEY;
 
 const API_ENDPOINT = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=knW7-x7Y7RE%2Cj8U06veqxdU&key=${API_KEY}`
 
