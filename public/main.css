@@ -22,7 +22,7 @@ body {
 
 .row {
   display: grid; 
-  grid-template-columns: 340px 100px 340px; 
+  grid-template-columns: 340px 140px 340px; 
   grid-template-rows: 80px;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
@@ -56,16 +56,8 @@ div.block:nth-of-type(3n+1) {
   justify-content: flex-end;
 }
 
-div.block:nth-of-type(3n+6) {
-  /* font-style: italic; */
-  padding-right: 0;
-  padding-left: 50px;
-}
-
-div.block:nth-of-type(3n+4) {
-  /* color: red; */
-  padding-right: 50px;
-  padding-left: 0;
+div.row:not(:first-child) div.block {
+  padding: 0 30px;
 }
 
 img.thumbnail {
